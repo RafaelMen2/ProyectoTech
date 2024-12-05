@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos de Energía Solar</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/datos.css">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">Energía Renovable</a>
+            <button class="navbar-toggler">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-links">
+                <a href="../index.html">Inicio</a>
+                <a href="datos.html">Datos</a>
+                <a href="calculadora.html" class="active">Calculadora</a>
+                <a href="dashboard.html">Dashboard</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-primary text-white py-5">
+        <div class="container text-center">
+            <h1 class="display-4">Datos de Energía Solar</h1>
+            <p class="lead">Información histórica sobre el consumo de energía solar.</p>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <div class="mb-3">
+            <label for="paisFiltro" class="form-label">País:</label>
+            <select class="form-select" id="paisFiltro">
+                <option value="">Todos</option>
+                <!-- Las opciones de país se agregan dinámicamente con JS -->
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="yearInicio" class="form-label">Año Inicio:</label>
+            <input type="number" class="form-control" id="yearInicio" min="1965" max="2022">
+        </div>
+        <div class="mb-3">
+            <label for="yearFin" class="form-label">Año Fin:</label>
+            <input type="number" class="form-control" id="yearFin" min="1965" max="2022">
+        </div>
+        <div class="d-flex justify-content-center mb-4">
+            <button class="btn btn-primary" onclick="filtrarDatos()">Filtrar</button>
+        </div>
+        <div id="errores-carga"></div>  <!-- Contenedor para mensajes de error -->
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Entidad</th>
+                        <th>Código</th>
+                        <th>Año</th>
+                        <th>Electricidad de Solar (TWh)</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla-datos"></tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>© 2024 Energía Renovable. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="../js/data.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Energía</title>
+    
+    <!-- Vinculación con fuente personalizada -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Vinculación con CSS personalizado -->
+    <link rel="stylesheet" href="../css/dashboard.css">
+     <!-- Barra de navegación -->
+     <nav class="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">Energía Renovable</a>
+            <button class="navbar-toggler">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-links">
+                <a href="../index.html">Inicio</a>
+                <a href="datos.html">Datos</a>
+                <a href="calculadora.html">Calculadora</a>
+                <a href="dashboard.html" class="active">Dashboard</a>
+            </div>
+        </div>
+    </nav>
+</head>
+
+<body>
+   
+
+    <!-- Contenido principal -->
+    <main>
+        <section id="charts">
+            <h2>Dashboard de Energías Renovables</h2>
+            <div class="charts-container">
+                <div class="chart-card">
+                    <canvas id="bar-chart"></canvas>
+                </div>
+                <div class="chart-card">
+                    <canvas id="pie-chart"></canvas>
+                </div>
+                <div class="chart-card">
+                    <canvas id="line-chart"></canvas>
+                </div>
+                <div class="chart-card">
+                    <canvas id="area-chart"></canvas>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Energía Renovable. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../js/dashboard.js"></script>
+</body>
+</html>

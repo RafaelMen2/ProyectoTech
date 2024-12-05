@@ -1,0 +1,133 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f4f8; /* Fondo claro pero suave */
+    color: #333;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #00695c; /* Verde oscuro */
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #004d40; /* Verde oscuro para la barra de navegación */
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    color: #ffffff;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.navbar-toggler {
+    border: none;
+    background: transparent;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.navbar-links a:hover,
+.navbar-links a:hover {
+    color: #39ff08; /* Naranja brillante para hover y estado activo */
+}
+
+/* Main Content */
+main {
+    padding: 50px 20px;
+}
+
+#charts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.charts-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.chart-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.chart-card:hover {
+    transform: translateY(-5px); /* Efecto de hover para destacar */
+}
+
+/* Footer */
+footer {
+    background-color: #004d40;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none; /* Ocultar los enlaces en pantallas pequeñas */
+    }
+
+    .navbar-toggler {
+        display: block;
+    }
+
+    .charts-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* For larger screens */
+@media (min-width: 992px) {
+    .navbar-links {
+        display: flex;
+    }
+
+    .navbar-toggler {
+        display: none;
+    }
+}

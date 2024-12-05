@@ -1,0 +1,186 @@
+/* calculadora.css */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    color: #2bc0c5;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #28c5ca; /* Brand color */
+    color: white;
+    padding: 3rem 0; /* Added padding */
+}
+
+header h1 {
+    font-size: 3rem; /* Increased size */
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+main h2 {
+    font-size: 2.5rem; /* Increased size */
+    font-weight: 700;
+    color: #20bbd6; /* Brand color */
+    margin-bottom: 2rem;
+}
+
+form {
+    border: 1px solid #dee2e6;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem; /* Added margin */
+}
+
+label {
+  display: block; /* Labels on their own line */
+  margin-bottom: 0.5rem;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+.btn-success {
+    padding: 1rem 2rem; /* Larger button */
+    font-size: 1.2rem; /* Larger button text */
+}
+
+.resultados h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    color: #1fcad6; /* Brand color */
+}
+
+footer {
+    background-color: #1cc3da; /* Darker footer */
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+
+/* Estilo del contenedor de resultados */
+.resultados {
+    margin-top: 20px; /* Espacio sobre el resultado */
+    padding: 15px 20px;
+    background-color: #e7f8e7; /* Fondo claro */
+    color: #00796b; /* Texto en verde oscuro */
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px; /* Ajuste de tamaño */
+    margin-left: auto;
+    margin-right: auto;
+}
+.close {
+    color: #333;
+    float: right;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer; /* Improved cursor */
+    margin-bottom: 1rem;
+}
+
+.close:hover {
+    color: #20b5cf;
+}
+
+.modal p {
+    font-size: 1.2rem;
+}
+.hidden {
+    display: none;
+}
+* Navbar */
+.navbar {
+    background-color: #004d40; /* Verde oscuro para la barra de navegación */
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(183, 13, 199, 0.1);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    color: #227ac2;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.navbar-toggler {
+    border: none;
+    background: transparent;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-links a {
+    color: #21a7cf;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.navbar-links a:hover,
+.navbar-links .a:hover {
+    color: #ffffff; /* Naranja brillante para hover y estado activo */
+
+}
+/* Navbar */
+.navbar {
+    background-color: #004d40; /* Verde oscuro para la barra de navegación */
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(187, 12, 99, 0.1);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    color: #ffffff;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.navbar-toggler {
+    border: none;
+    background: transparent;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.navbar-links a:hover,
+.navbar-links .a:hover {
+    color: #23bd15; /* Naranja brillante para hover y estado activo */
+}
+

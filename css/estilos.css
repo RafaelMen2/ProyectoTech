@@ -1,0 +1,303 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f9fc;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #007b5e;
+    font-weight: 1000;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.navbar .nav-link {
+    color: #fff;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: #ffcc00;
+}
+
+.navbar-toggler-icon {
+    background-color: #fff;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(to right, #004d40, #007b5e);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.hero-section p {
+    font-size: 1.25rem;
+    margin: 20px 0;
+    letter-spacing: 1px;
+}
+
+.hero-section .btn-primary {
+    background-color: #ffcc00;
+    border-color: #ffcc00;
+    color: #004d40;
+    font-weight: 600;
+    padding: 12px 30px;
+    transition: all 0.3s ease;
+}
+
+.hero-section .btn-primary:hover {
+    background-color: #007b5e;
+    border-color: #007b5e;
+    color: rgb(24, 18, 18);
+}
+
+/* Beneficios Section */
+.icon-box {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.icon-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.icon-box img {
+    width: 80px;
+    transition: transform 0.3s ease;
+}
+
+.icon-box:hover img {
+    transform: scale(1.1);
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1rem;
+    color: #030303;
+}
+
+/* Stats Section */
+.stats-section {
+    background-color: #f7f9fc;
+}
+
+.stat-box {
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.stat-box:hover {
+    background-color: #004d40;
+    cursor: pointer;
+}
+
+.stat-box h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.stat-box p {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* Footer */
+footer {
+    background-color: #003d33;
+    color: #fff;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section p {
+        font-size: 1.1rem;
+    }
+
+    .hero-section .btn-primary {
+        font-size: 1rem;
+    }
+
+    .navbar .navbar-brand {
+        font-size: 1.6rem;
+    }
+
+    .navbar .nav-link {
+        font-size: 1rem;
+    }
+}
+/* Sección de beneficios: imágenes ajustadas y alineadas */
+.feature-box img {
+    width: 100px; /* Tamaño uniforme */
+    height: auto; /* Mantener proporción */
+    display: block; /* Asegurar alineación con el texto */
+    margin: 0 auto 10px; /* Centrar imagen y agregar espacio inferior */
+}
+
+.feature-box {
+    display: inline-block; /* Mostrar cada caja en línea */
+    text-align: center; /* Centrar el contenido dentro de cada caja */
+    margin: 0 20px; /* Espaciado entre elementos */
+}
+
+.row {
+    display: flex; /* Usar flexbox para ordenar elementos */
+    justify-content: center; /* Centrar elementos horizontalmente */
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan en varias filas si es necesario */
+}
+
+/* Asegurar diseño responsive */
+@media (max-width: 768px) {
+    .feature-box {
+        margin: 10px auto; /* Espaciado ajustado en dispositivos más pequeños */
+        width: 100%; /* Usar todo el ancho disponible */
+    }
+}
+
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7fc; /* Fondo claro */
+    color: #333;
+}
+
+.navbar {
+    background-color: #00796b;
+    padding: 15px 30px;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.navbar .nav-link {
+    color: #fff;
+    font-size: 1rem;
+    margin-left: 15px;
+}
+
+.navbar .nav-link:hover {
+    color: #ffca28;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/hero-background.jpg') center/cover no-repeat;
+    height: 60vh;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.container {
+    padding: 30px;
+}
+
+h2.text-center {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.feature-box {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+.feature-box img {
+    width: 150px; /* Aumentar tamaño de la imagen */
+    margin-bottom: 15px;
+}
+
+.feature-box h4 {
+    font-size: 1.5rem;
+    color: #00796b;
+    margin-bottom: 10px;
+}
+
+.feature-box p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Grid Styling */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer {
+    background-color: #00796b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}

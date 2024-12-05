@@ -1,0 +1,239 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar-custom {
+    background: linear-gradient(to right, #4CAF50, #1E88E5);
+    padding: 15px 0;
+}
+
+.navbar-custom .navbar-brand {
+    color: white;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.navbar-custom .nav-link {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.navbar-custom .nav-link:hover {
+    color: #ffcc00;
+}
+
+/* Header */
+.hero-section {
+    background: linear-gradient(to right, #4CAF50, #1E88E5);
+    color: white;
+    padding: 80px 0;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+/* Card (Filters) */
+.filter-card {
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #1E88E5;
+}
+
+.form-label {
+    font-weight: 600;
+    color: #4CAF50;
+}
+
+.btn-custom {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    font-weight: 600;
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #388e3c;
+}
+
+/* Table */
+.table {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.thead-custom {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Footer */
+.footer {
+    background-color: #1E88E5;
+    color: white;
+    padding: 20px 0;
+    font-size: 1rem;
+}
+
+.footer p {
+    font-weight: 600;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .navbar-custom .navbar-nav {
+        text-align: center;
+    }
+}
+/* Navbar */
+.navbar {
+    background-color: #004d40; /* Verde oscuro para la barra de navegación */
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    color: #ffffff;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.navbar-toggler {
+    border: none;
+    background: transparent;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.navbar-links a:hover,
+.navbar-links a:hover {
+    color: #22d61c; /* Naranja brillante para hover y estado activo */
+}
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7fc; /* Fondo suave y claro */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Tabla Estilizada */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Elimina el espacio entre celdas */
+    margin: 30px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden; /* Esquinas redondeadas */
+}
+
+table th, table td {
+    padding: 12px 15px;
+    text-align: center;
+}
+
+table th {
+    background-color: #0288d1; /* Azul claro para el encabezado */
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-top: 4px solid #ffca28; /* Borde dorado en la parte superior */
+    border-bottom: 2px solid #ffca28; /* Borde dorado en la parte inferior */
+}
+
+table td {
+    background-color: #ffffff;
+    color: #333;
+    font-size: 1rem;
+    border-bottom: 1px solid #ddd; /* Borde sutil entre filas */
+}
+
+table tr:hover {
+    background-color: #f1f1f1; /* Fondo gris claro al pasar el mouse */
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Fondo alterno gris suave para filas pares */
+}
+
+table tr:nth-child(odd) {
+    background-color: #ffffff; /* Fondo blanco para filas impares */
+}
+
+/* Mejorar la visibilidad de la tabla en dispositivos móviles */
+@media (max-width: 768px) {
+    table th, table td {
+        font-size: 0.9rem; /* Reducir el tamaño de la fuente en pantallas pequeñas */
+        padding: 8px 10px; /* Reducir el espacio de las celdas en pantallas pequeñas */
+    }
+    
+    table {
+        margin: 20px 0; /* Reducir el margen para pantallas pequeñas */
+    }
+}
